@@ -170,6 +170,9 @@ target_link_libraries(${PROJECT_NAME} PUBLIC nlohmann_json::nlohmann_json)
 find_package(spdlog REQUIRED)
 target_link_libraries(${PROJECT_NAME} PUBLIC spdlog::spdlog)
 
+find_package(tinyxml2 REQUIRED)
+target_link_libraries(${PROJECT_NAME} PUBLIC tinyxml2::tinyxml2)
+
 FetchContent_Declare(
     StormLib
     GIT_REPOSITORY https://github.com/ladislav-zezula/StormLib.git
